@@ -1,0 +1,41 @@
+.single-story{
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    color:whitesmoke;
+    flex-basis: 25%;
+    
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    width: 70%;
+    margin: 70% auto;
+    margin-bottom: 0;
+}
+
+.line{
+    height: 2px;
+    margin-bottom: 20px;
+}
+
+.text>h3{
+    margin: 0;
+    padding: 0;
+}
+
+.text>h4{ 
+    cursor: pointer;
+}
+
+@media (max-width:800px) {
+    .single-story{
+        flex-basis: 50%;
+    }
+    .text{
+        margin: 50% auto;
+    }
+}
+

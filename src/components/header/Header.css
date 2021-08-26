@@ -1,0 +1,92 @@
+.header-wrapper{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 90px;
+    position: sticky;
+    top: 0px;
+    background-color: white;
+    z-index: 10;
+    
+}
+
+.navbar{
+    width: 25%;
+}
+
+.navbar-ul{
+    display: flex;
+    justify-content: space-between;
+}
+.navbar-ul>li{
+    list-style: none;
+    cursor: pointer;
+}
+
+.invite-btn{
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 140px;
+    cursor: pointer;
+    letter-spacing:3px;
+
+}
+
+.burger{
+    display: none;
+}
+
+.line{
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    margin-left: -2px;
+}
+
+@media (max-width:1050px) {
+    .navbar{
+        width: 35%;
+    }
+}
+
+@media (max-width:800px) {
+    .burger{
+        display: block;
+        position: fixed;
+        top:20px;
+        right:10px;
+    }
+    .header-wrapper{
+        flex-direction: column;
+        justify-content: center;
+    }
+    #invite-btn{
+        display: none;
+    }
+    .navbar-ul{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        opacity: 95%;
+        font-size: 1.3rem;
+        position: fixed;
+        right: 0;
+        top: -90vh;
+        height: 90vh;
+        background-color: white;
+        transition: all 0.2s ease-in; 
+        z-index: 2;
+        
+    }
+}
+
+.navbar-ul-active{
+    top: 90px;
+}
+
